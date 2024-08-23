@@ -312,6 +312,17 @@ a:focus {
   margin-top: 15px;
   margin-bottom: 25px;
 }
+.content_middle{
+  border: none;
+  height: 4px;
+  margin: 0 auto;
+  width: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+
 .capabilities_section p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -2010,6 +2021,16 @@ element {
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .content_middle{
+    border: none;
+    height: 4px;
+    margin: 0 auto;
+    width: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 38%;
+    justify-content: center;
+  }
   .mob {
     display: none !important;
   }
