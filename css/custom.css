@@ -3,7 +3,7 @@ a:focus {
   text-decoration: none;
 }
 .top_section {
-  background-color: #f8f7fd;
+  background-color: #f8f8fd;
   padding: 0px;
 }
 .main_div {
@@ -269,7 +269,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -298,7 +298,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -416,7 +416,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -427,7 +427,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -494,7 +494,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -530,7 +530,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -554,7 +554,7 @@ a:focus {
   position: absolute;
   top: 0px;
   left: 25px;
-  background: #0f9d3f;
+  background: #0f9d2f;
   padding: 2px 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -571,7 +571,7 @@ a:focus {
 .blog_bottom > p:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #0f9d3f;
+  color: #0f9d2f;
   font-size: 16px;
   line-height: 20px;
 }
@@ -646,7 +646,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -1054,7 +1054,7 @@ a:focus {
   margin-bottom: 0px;
 }
 .breadcrumb > li a {
-  color: #0f9d3f;
+  color: #0f9d2f;
   font-size: 14px;
   line-height: 22px;
   font-family: "Roboto", sans-serif;
@@ -1083,7 +1083,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -1116,7 +1116,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: left;
   text-transform: uppercase;
@@ -1127,7 +1127,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: left;
   text-transform: uppercase;
@@ -1209,7 +1209,7 @@ a:focus {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: left;
   text-transform: uppercase;
@@ -1346,7 +1346,7 @@ a:focus {
   border: 0px solid transparent;
 }
 .pagination > li a:hover {
-  background-color: #0f9d3f;
+  background-color: #0f9d2f;
   border: 0px solid transparent;
   color: #fff;
 }
@@ -1386,10 +1386,10 @@ a:focus {
   -o-transform: scale(1.1); /* Opera */
 }
 .post-content a {
-  color: #0f9d3f;
+  color: #0f9d2f;
 }
 .post-content a:hover {
-  color: #0f9d3f;
+  color: #0f9d2f;
 }
 .mar_top50 {
   margin-top: 50px;
@@ -1688,7 +1688,7 @@ a:focus {
 }
 .sidebar-title h2 {
   font-size: 20px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 20px;
@@ -1774,7 +1774,7 @@ element {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: left;
   text-transform: uppercase;
@@ -1905,7 +1905,7 @@ element {
   text-transform: uppercase;
   font-size: 22px !important;
   line-height: 30px;
-  color: #0f9d3f;
+  color: #0f9d2f;
   margin: 0px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -2226,10 +2226,10 @@ element {
   /* Video Banner */
 
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item:focus,
   .dropdown-item:hover {
@@ -2515,10 +2515,10 @@ element {
     display: none !important;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item:focus,
   .dropdown-item:hover {
@@ -2767,10 +2767,10 @@ element {
   /* Video Banner */
 
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item:focus,
   .dropdown-item:hover {
@@ -2999,10 +2999,10 @@ element {
   /* Video Banner */
 
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item {
-    background-color: #f8f7fd;
+    background-color: #f8f8fd;
   }
   .dropdown-item:focus,
   .dropdown-item:hover {

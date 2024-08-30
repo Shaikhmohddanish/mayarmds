@@ -469,7 +469,7 @@ body {
 	}
 	
 	.blog-list h3, .blog-read h3 {
-	color: #0f9d3f;
+	color: #0f9d2f;
 	letter-spacing:normal;
 	font-size:22px;
 	}
@@ -559,7 +559,7 @@ body {
 	height:80px;
 	}
 
-    .post-text h3 a { color: #0f9d3f; margin-bottom: 20px; font-size: 18px;}
+    .post-text h3 a { color: #0f9d2f; margin-bottom: 20px; font-size: 18px;}
     .post-text h3 a:hover { text-decoration: none;}
 	
 	.bloglist .overlay-area .day{
