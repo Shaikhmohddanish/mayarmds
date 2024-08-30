@@ -45,7 +45,6 @@ body {
 	header h1#logo {
 	display: inline-block;
 	height: 100%;
-	float: left;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -134,7 +133,7 @@ body {
 	margin-top:100px;
 	font-size: 32px;
 	letter-spacing: -2px;
-	float: left;
+	
 	padding-right: 40px;
 	margin-right: 40px;
 	text-transform:none;
@@ -179,7 +178,7 @@ body {
 	#mainmenu li {
 	margin: 0px 10px;
 	padding: 0px 0px;
-	float: left;
+	
 	display: inline;
 	list-style: none;
 	position: relative;
@@ -444,17 +443,14 @@ body {
 	position: absolute;
 	}
 	
-	#blog-comment li li .comment {
-	}
+
 	
 	.comment-info {
 	margin-left: 85px;
 	margin-bottom: 5px;
 	}
 	
-	.comment-info span {
-	}
-	
+
 	.comment-info .c_name {
 	display: block;
 	font-weight: 700;
@@ -540,9 +536,7 @@ body {
 	border-bottom: solid 1px #555;
 	}
 	
-	/* blog list 3 columns */
-	.bloglist{
-	}
+
 	
 	.bloglist .overlay-area{
 	display: block;
@@ -683,8 +677,7 @@ body {
 	
 	/* address */
 	/* ------------------------------ */
-	address{
-	}
+
 	address span {
 	display: block;
 	font-size:16px;
@@ -884,7 +877,7 @@ body {
 	.dropcap {
 	display: inline-block;
 	font-size: 48px;
-	float: left;
+	
 	margin: 10px 15px 15px 0;
 	color:#eceff3;
 	padding: 20px 10px 20px 10px;
@@ -1062,8 +1055,7 @@ body {
 	.feature-box-image-2.no-bg h2 {
 	padding-top:12px;
 	}
-	.feature-box-image-2.no-bg{
-	}
+
 	.feature-box-image-2.no-bg .inner, .feature-box-image-2.no-bg .inner:hover{
 	padding:0;
 	background:none;
@@ -1086,8 +1078,7 @@ body {
 	.feature-box-big-icon{
 	text-align:center;
 	}
-	.feature-box-big-icon .text{
-	}
+
 	.feature-box-big-icon i {
 	float:none;
 	display:inline-block;
@@ -1225,36 +1216,28 @@ body {
 	width: 49%;
 	}
 	
-	.pricing-3-col {
-	}
+
 	
 	.pricing-3-col .pricing-box {
 	width: 32.33%;
 	}
 	
-	.pricing-4-col {
-	}
+
 	
 	.pricing-4-col .pricing-box {
 	width: 24%;
 	}
-	
-	.pricing-5-col {
-	}
+
 	
 	.pricing-5-col .pricing-box {
 	width: 19%;
 	}
 	
-	.pricing-2-col,
-	.pricing-3-col,
-	.pricing-4-col,
-	.pricing-5-col{
-	}
+
 	
 	
 	.pricing-box {
-	float: left;
+	
 	text-align: center;
 	margin:5px;
 	padding: 0;
@@ -1292,9 +1275,7 @@ body {
 	.pricing-box li.title-row {
 	padding: 15px 0 15px 0;
 	}
-	
-	.pricing-box li.title-row h4{
-	}
+
 	
 	.pricing-box li.price-row {
 	padding: 15px 0 15px 0;
@@ -1317,8 +1298,7 @@ body {
 	.pricing-box li.btn-row {
 	background: #ddd;
 	}
-	.pricing-dark .pricing-box{
-	}
+
 	.pricing-dark .pricing-box ul {
 	margin: 0;
 	padding: 0;
@@ -1470,7 +1450,7 @@ body {
 	}
 	
 	.de_tab .de_nav li {
-	float: left;
+	
 	list-style: none;
 	background: #EEE;
 	margin-right: 5px;
@@ -1744,7 +1724,7 @@ body {
 	}
 	
 	.de_testi_pic {
-	float: left;
+	
 	padding-right: 15px;
 	}
 	
@@ -1874,7 +1854,7 @@ padding: 20px 20px 20px 20px;
 
 .call-to-action-box .text {
 margin-right: 20px;
-float: left;
+
 }
 
 .call-to-action-box .act {
@@ -2043,7 +2023,7 @@ transition:.5s;
 /* image position */
 /* ================================================== */
 .img-left {
-float: left;
+
 margin: 5px 15px 15px 0;
 }
 
@@ -2061,7 +2041,7 @@ margin: 5px 0 15px 15px;
 width: 48px;
 height: auto;
 margin: 0 12px 12px 0;
-float: left;
+
 }
 
 #flickr-photo-stream a img {
@@ -2454,8 +2434,6 @@ p.intro{
 	background:#f5f5f5;
 }
 
-.no-bottom .col-md-12 {
-}
 
 .center-y, .text-intro{
 letter-spacing:2px;
@@ -2492,9 +2470,7 @@ padding-top: 0;
 padding:0;
 }
 
-.float-left {
-float: left;
-}
+
 
 #loader-area{
 display:none;
@@ -2624,7 +2600,6 @@ box-shadow:none;
 /* ================================================== */
 .quick-search {
 display: inline-block;
-float: right;
 margin-left: 10px;
 padding: 10px 0 0 0;
 }
@@ -2789,7 +2764,7 @@ margin-bottom: -3px;
 	header.fixed h1#logo {
 	height: 100%;
 	line-height: 120px;
-	float: left;
+	
 	}
 	
 	
@@ -2835,8 +2810,7 @@ margin-bottom: -3px;
 	padding: 20px;
 	}
 	
-	#revolution-slider{
-	}
+
 	
 	#mainmenu{
 	display:none;
@@ -3011,3 +2985,18 @@ margin-bottom: -3px;
 	}
 	.team img.team-pic{max-width:300px;}
 	}
+
+}
+
+#header-image-menu {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#header-image-menu img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the container without distortion */
+    display: block; /* Remove any default margins/padding from img */
+}
