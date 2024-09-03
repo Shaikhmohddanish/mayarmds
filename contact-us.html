@@ -44,6 +44,38 @@
     <link rel="stylesheet" href="fonts/et-line-font/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
     <script src="kit.fontawesome.com/e3da0835c5.js"></script>
+    <style>
+        .loader-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+                z-index: 10;
+                display: none; /* Initially hidden */
+            }
+
+            .loader-load {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 6px solid #f3f3f3; /* Light grey */
+                border-top: 6px solid #3498db; /* Blue */
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                animation: spin 2s linear infinite;
+                z-index: 11;
+                display: none; /* Initially hidden */
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+    </style>
 </head>
 
 <body>
@@ -97,7 +129,7 @@
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item divider" href="feed-design-and-cost-estimation.html">FEEd Design And Cost Estimation</a>
-                        <a class="dropdown-item divider" href="cost-estimation.html">Cost Estimation</a>
+                        
                         <a class="dropdown-item divider" href="layout-design.html">Layout Design (2D, 3D Models)</a>
                         <a class="dropdown-item divider" href="project-feasibility.html">Finite Element Analysis (FEA)</a>
                         <a class="dropdown-item divider" href="cfd-analysis.html">CFD Analysis</a>
@@ -144,7 +176,10 @@
             <section class="about_section">
                 <div class="container">
                     <div class="row">
-                        <form method="post">
+                        <div id="submission-message" style="display: none;color: white;" class="text-center">
+                            <h1>Thank You!!! We will get back to you soon</h1>
+                        </div>
+                        <form method="post" id="contactForm" action="https://script.google.com/macros/s/AKfycbzFmi3epK6J7bC15MemhZ6nt-Wo6GvN1mXsEciIAbaUE0T-RqFFN8gSLez5_wpp2Y2EIw/exec">
                             <div class="col-md-7 col-sm-6">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -154,7 +189,7 @@
                                         </div>
                                     </div>
                                 </div>
-
+                        
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <input type="text" required class="form-control control1" id="txtCompanyName" name="txtCompanyName" placeholder="Name Of Company *">
@@ -175,12 +210,12 @@
                                     <div class="col-md-6 col-sm-6">
                                         <select class="form-control control1" id="drpTypeProject" name="drpTypeProject">
                                             <option value="Type Of Project">Type Of Project</option>
-                                            <option value="Stress Analyasis">Stress Analyasis</option>
-                                            <option value="Pressure Vessel">Pressure Vessel</option>
-                                            <option value="FEA and CFD">FEA and CFD</option>
-                                            <option value="Surge/ Water Hammer Analysis">Surge/ Water Hammer Analysis</option>
-                                            <option value="Piping Design ">Piping Design </option>
-                                            <option value="Pipe Line Engineering">Pipe Line Engineering</option>
+                                            <option value="Feed Design and Cost Estimation">Feed Design and Cost Estimation</option>
+                                            <option value="Layout Design (2D, 3D Models)">Layout Design (2D, 3D Models)</option>
+                                            <option value="Finite Element Analysis (FEA)">Finite Element Analysis (FEA)</option>
+                                            <option value="CFD Analysis">CFD Analysis</option>
+                                            <option value="P&ID">P&ID </option>
+                                            <option value="Heat And Mass Transfer Analysis">Heat And Mass Transfer Analysis</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
@@ -189,12 +224,18 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-default send_btn" >Send</button>
+                                        <button type="submit" class="btn btn-default send_btn">Send</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                        <div class="col-md-5 col-sm-6">
+                        <div class="step-description" id="my-form-status"></div>
+                        <div class="loader-overlay" id="loader-overlay"></div>
+                        <div class="loader-load" id="loader-load"></div>
+                        
+                        
+                        
+                        <div class="col-md-5 col-sm-6" id="hide-contact-info">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form_box">
@@ -315,84 +356,48 @@
 
     <!-- Javascript Files
     ================================================== -->
+    <script src="js/contact-us.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/jquery.ui.totop.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.scrollto.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/video.resize.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/designesia.js"></script>
-
-    <!-- SLIDER REVOLUTION SCRIPTS  -->
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script>
-        var affixElement = '#navbar-main';
+        
+        var form = document.getElementById("contactForm");
+        var loaderOverlay = document.getElementById("loader-overlay");
+        var loader = document.getElementById("loader-load");
+        var submissionMessage = document.getElementById("submission-message");
+        var contactInfo = document.getElementById("hide-contact-info");
 
-        $(affixElement).affix({
-            offset: {
-                // Distance of between element and top page
-                top: function () {
-                    return (this.top = $(affixElement).offset().top)
-                },
-                // when start #footer
-                bottom: function () {
-                    return (this.bottom = $('#footer').outerHeight(true))
+        async function handleSubmit(event) {
+            event.preventDefault();            
+            var status = document.getElementById("my-form-status");
+            loaderOverlay.style.display = 'block'; // Display overlay
+            loader.style.display = 'block'; // Display loader
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                'Accept': 'application/json'
                 }
-            }
-        });
-    </script>
-    <script>
-
-        function FormSubmit() {
-
-            // alert(543535);
-            var bodytext = "<table>  <tr> <td>Company Name : </td> <td> " + document.getElementById('txtCompanyName').value + " </td> </tr>";
-            bodytext = bodytext + "  <tr> <td> Name : </td> <td> " + document.getElementById('txtName').value + " </td> </tr> ";
-            bodytext = bodytext + "  <tr> <td> Contact Number : </td> <td> " + document.getElementById('txtContact').value + " </td> </tr> ";
-            bodytext = bodytext + "  <tr> <td> Email : </td> <td> " + document.getElementById('txtEmail').value + " </td> </tr> ";
-            bodytext = bodytext + "  <tr> <td> Project Type : </td> <td> " + document.getElementById('drpTypeProject').value + " </td> </tr> ";
-            bodytext = bodytext + "  <tr> <td> Comments : </td> <td> " + document.getElementById('txtcomment').value + " </td> </tr> ";
-            bodytext = bodytext + "</table>";
-
-            var dataObject = JSON.stringify({
-                "Name": document.getElementById("txtName").value,
-                "ToEmailAddress": document.getElementById("txtEmail").value,
-                "subject": "Home Page Form details",
-                "Body": bodytext,
-                "attachment": "",
+            }).then(response => {
+                loaderOverlay.style.display = 'none';
+                loader.style.display = 'none';
+                status.style.display = 'block';
+                form.style.display = 'none';
+                contactInfo.style.display = 'none';
+                submissionMessage.style.display = 'block'; // Show submission message
+            }).catch(error => {
+                status.style.display = 'block';
+                form.style.display = 'none';
+                contactInfo.style.display = 'none';
+                status.innerHTML = "Oops! Something went wrong.";
             });
-
-            $.ajax({
-                type: "POST",
-                url: "https://api.protton.co.in/api/proton/contactemail",
-                data: dataObject,
-                contentType: "application/json",
-                dataType: "json",
-                success: function (result, status, xhr) {
-                    // alert(JSON.stringify(result));
-                    alert("Thank you, Our team member will contact you soon!");
-                },
-                error: function (xhr, status, error) {
-                    alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
-                }
-
-            });
-
-            return false;
-
         }
-
+        form.addEventListener("submit", handleSubmit);
     </script>
+    
 </body>
 
-<!-- Mirrored from www.protton.co.in/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Aug 2024 14:17:05 GMT -->
 </html>
