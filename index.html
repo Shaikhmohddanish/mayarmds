@@ -54,7 +54,7 @@
                             <div class="left_div">
                                 <div class="top_left_sec">
                                     <ul>
-                                        <li><a href="tel: 91 8323447312"><i class="fa fa-phone c_icon"></i> +91 8323447312</a></li>
+                                        <li><a href="tel: 91 9987096620"><i class="fa fa-phone c_icon"></i> +91 9987096620</a></li>
                                         <li><a href="mailto: info@mayarmds.com"><i class="fa fa-envelope c_icon2"></i>info@mayarmds.com</a></li>
                                     </ul>
                                 </div>
@@ -63,7 +63,7 @@
                                 <div class="top_left_sec">
                                     <ul>
                                         <li><i class="fa fa-history c_icon2"></i> Mon - Fri : 10.00 AM - 06.00 PM</li>
-                                        <li><a href="" target="_blank"><i class="fab fa-linkedin-in c_icon2"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/mayar-detailing-services" target="_blank"><i class="fab fa-linkedin-in c_icon2"></i></a></li>
                                     </ul>
                                     <a href="contact-us.html"><button type="button" class="btn quote_btn">Get A Quote</button></a>
                                 </div>
@@ -104,7 +104,7 @@
                       </div>
                   </li>
                   <li><a href="projects.html">Projects</a></li>
-                  <li><a href="projects.html">Key Personal</a></li>
+                  <li><a href="key-personnel.html">Key Personnel</a></li>
                   <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
               </div>
@@ -237,17 +237,6 @@
                                 </div>
                             </div> 
 
-                            <!-- <div class="capabilities_box">
-                                
-                                <div class="capabilities_box2">
-                                    <p>Layout Design (2D, 3D models)</p>
-                                    <p>We provide detailed 2D and 3D design models of process plants, piping networks, and equipment.</p>
-                                    <a href="layout-design.html"><button type="button" class="btn btn-default read_btn">Read More</button></a>
-                                </div>
-                                <div class="capabilities_box1 img-wrapper"></div>
-                                    <img src="images/services/service/2d3dLayout.png" class="img-responsive">
-                                </div>
-                            </div> -->
                         </div>
                         
                         <!-- logo carousel close -->
@@ -266,54 +255,80 @@
                     <div class="row">
                         <div class="col-md-7 col-sm-6">
                             <div class="consultation_box">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3>Get a quote for services</h3>
-                                        <hr class="hr_02">
-                                    </div>
+                                <div id="submission-message" style="display: none; color: white;" class="text-center">
+                                    <h1>Thank You!!! We will get back to you soon</h1>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="email" class="form-control control1" id="" placeholder="Name Of Company*">
+                                <form method="post" id="contactForm" action="https://script.google.com/macros/s/AKfycbwNY6imoibai0qci2Pbc8Uwe_LUgILUiE_mTSwNrK1-_Xbz0ORufyH3lgJux8uukhm8ZA/exec">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="contact_sec1 text-center">
+                                                <h1 class="mar_top">Send Us A Message</h1>
+                                                <hr class="hr_04">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="email" class="form-control control1" id="" placeholder="Name *">
+                        
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" required class="form-control control1" id="txtCompanyName" name="txtCompanyName" placeholder="Name Of Company *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" required class="form-control control1" id="txtName" name="txtName" placeholder="Name *">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="email" class="form-control control1" id="" placeholder="Contact Number *">
+                        
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="number" required class="form-control control1" id="txtContact" name="txtContact" placeholder="Contact Number *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="email" required class="form-control control1" id="txtEmail" name="txtEmail" placeholder="Email Id *">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="email" class="form-control control1" id="" placeholder="Email Id *">
+                        
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <select class="form-control control1" id="drpTypeProject" name="drpTypeProject">
+                                                    <option value="Type Of Project">Type Of Project</option>
+                                                    <option value="Feed Design and Cost Estimation">Feed Design and Cost Estimation</option>
+                                                    <option value="Layout Design (2D, 3D Models)">Layout Design (2D, 3D Models)</option>
+                                                    <option value="Finite Element Analysis (FEA)">Finite Element Analysis (FEA)</option>
+                                                    <option value="CFD Analysis">CFD Analysis</option>
+                                                    <option value="P&ID">P&ID</option>
+                                                    <option value="Heat And Mass Transfer Analysis">Heat And Mass Transfer Analysis</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control control2" rows="3" id="txtcomment" name="txtcomment" required placeholder="Message *"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <select class="form-control control1">
-                                            <option value="Type Of Project">Type Of Project</option>
-                                            <option value="Stress Analyasis">Stress Analyasis</option>
-                                            <option value="Pressure Vessel">Pressure Vessel</option>
-                                            <option value="FEA and CFD">FEA and CFD</option>
-                                            <option value="Surge/ Water Hammer Analysis">Surge/ Water Hammer Analysis</option>
-                                            <option value="Piping Design ">Piping Design </option>
-                                            <option value="Pipe Line Engineering">Pipe Line Engineering</option>
-                                        </select>
+                        
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-default send_btn">Send</button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <textarea class="form-control control2" rows="2" id="comment" placeholder="Message *"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        
-                                    </div>
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn btn-default submit_btn">Submit</button>
-                                    </div>
-                                </div>
+                                </form>
+                        
+                                <!-- Loader and status elements -->
+                                <div class="step-description text-center" id="my-form-status"></div>
+                                <div class="loader-overlay" id="loader-overlay" style="display:none;"></div>
+                                <div class="loader-load" id="loader-load" style="display:none;"></div>
                             </div>
                         </div>
+                        
                         
                         <div class="col-md-5 col-sm-6">
                             <div class="consultation_box res_top_35">
@@ -549,7 +564,7 @@
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div class="add_section2">
-                                    <p><a href="tel:91 8323447312">+91 8323447312</a></p>
+                                    <p><a href="tel:91 9987096620">+91 9987096620</a></p>
                                 </div>
                             </div>
                             <div class="add_section">
@@ -614,6 +629,43 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/typingEffect.js"></script>
+
+    <script>
+        
+        var form = document.getElementById("contactForm");
+        var loaderOverlay = document.getElementById("loader-overlay");
+        var loader = document.getElementById("loader-load");
+        var submissionMessage = document.getElementById("submission-message");
+        var contactInfo = document.getElementById("hide-contact-info");
+
+        async function handleSubmit(event) {
+            event.preventDefault();            
+            var status = document.getElementById("my-form-status");
+            loaderOverlay.style.display = 'block'; // Display overlay
+            loader.style.display = 'block'; // Display loader
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                'Accept': 'application/json'
+                }
+            }).then(response => {
+                loaderOverlay.style.display = 'none';
+                loader.style.display = 'none';
+                status.style.display = 'block';
+                form.style.display = 'none';
+                contactInfo.style.display = 'none';
+                submissionMessage.style.display = 'block'; // Show submission message
+            }).catch(error => {
+                status.style.display = 'block';
+                form.style.display = 'none';
+                contactInfo.style.display = 'none';
+                status.innerHTML = "Oops! Something went wrong.";
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
     
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>

@@ -38,55 +38,52 @@
     <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css">
     <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
     <style>
-        .project-section {
+        .key-personnel-section {
             margin-top: 50px;
             margin-bottom: 50px;
         }
 
-        .project-section h2 {
+        .key-personnel-section h2 {
             font-size: 36px;
             font-weight: bold;
-            margin-bottom: 20px;
             color: #333;
         }
 
         .hr_05 {
             width: 60px;
             height: 3px;
-            background-color: #007bff;
+            background-color: #0f9d2f;
             margin: 0 auto;
             margin-bottom: 30px;
         }
 
-        .project-card {
+        .personnel-card {
             background-color: #f9f9f9;
             border-radius: 8px;
             margin-bottom: 30px;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
         }
 
-        .project-card h3 {
+        .personnel-photo img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .personnel-card h3 {
             font-size: 28px;
             font-weight: bold;
             color: #0f9d2f;
-            margin-bottom: 15px;
-        }
-
-        .project-card ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .project-card ul li {
-            font-size: 16px;
-            line-height: 1.8;
             margin-bottom: 10px;
         }
 
-        .project-card ul li strong {
-            font-weight: bold;
+        .personnel-card p {
+            font-size: 16px;
             color: #333;
+            margin-bottom: 0;
         }
     </style>
 
@@ -195,7 +192,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                                    <li class="breadcrumb-item active" aria-current="page">key-personnel</li>
                                 </ol>
                             </nav>
                         </div>
@@ -203,101 +200,60 @@
                 </div>
             </section>
 
-            <section class="project_section">
-                <div class="container project-section">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2>Our Projects</h2>
+            <section class="key_personnel_section">
+                <div class="container key-personnel-section">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <h2>Meet Our Key Personnel</h2>
                             <hr class="hr_05">
                         </div>
                     </div>
-                    <!-- Project 1 - WWTP -->
-                    <div class="row project-card">
-                        <div class="col-md-12">
-                            <h3>Project – Wastewater Treatment Plant (WWTP)</h3>
-                            <ul>
-                                <li><strong>2D Layout Feasibility and Plant 3D Model:</strong> Detailed feasibility
-                                    studies, including 2D layout designs and comprehensive 3D models, for optimal plant
-                                    configuration.</li>
-                                <li><strong>Heat and Mass Balance Analysis:</strong> In-depth calculations to ensure
-                                    efficient energy and material flow across the entire WWTP process.</li>
-                                <li><strong>Tank Nozzle Orientation Design:</strong> Customized nozzle orientation
-                                    designs for all storage and processing tanks to ensure safety, efficiency, and ease
-                                    of maintenance.</li>
-                                <li><strong>CFD of Aeration Tank:</strong> Advanced CFD simulations to optimize aeration
-                                    tank performance for enhanced oxygen transfer and mixing.</li>
-                                <li><strong>FEA of Membrane Tank:</strong> Structural analysis of membrane tanks using
-                                    FEA to ensure durability and reliability under operational loads.</li>
-                                <li><strong>Structural and Piping Analysis:</strong> Comprehensive structural and piping
-                                    analysis to guarantee safety and compliance with international standards.</li>
-                                <li><strong>Isometric and MTO Extractions:</strong> Detailed isometric drawings and MTO
-                                    extractions for accurate project costing and efficient material management.</li>
-                            </ul>
+
+                    <!-- Team Member: Rahul V -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>Rahul V</h3>
+                            <p><strong>Expertise:</strong> Layout Designing Expert</p>
                         </div>
                     </div>
 
-                    <!-- Project 2 - Mist Eliminator and Filters -->
-                    <div class="row project-card">
-                        <div class="col-md-12">
-                            <h3>Project – Mist Eliminator and Filters</h3>
-                            <ul>
-                                <li><strong>FEA to Optimize Stiffeners Across Mist Eliminator Casing:</strong> Finite
-                                    Element Analysis to enhance the structural integrity of mist eliminators through
-                                    optimized stiffener design.</li>
-                                <li><strong>Fabrication Drawings for 20K CFM Mist Eliminator:</strong> Detailed 3D
-                                    model-based fabrication drawings for a 20K CFM mist eliminator, including fiber bed
-                                    candle filters.</li>
-                                <li><strong>Scrubber and Tower Packing Fabrication Drawings:</strong> Precision
-                                    fabrication drawings for scrubbers and tower packing to ensure optimal performance
-                                    and compliance.</li>
-                                <li><strong>Instrumentation and Blower Assembly:</strong> Comprehensive design
-                                    incorporating all necessary instrumentation and blower assemblies for efficient
-                                    operation.</li>
-                            </ul>
+                    <!-- Team Member: Mohammad Belal -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>Mohammad Belal</h3>
+                            <p><strong>Expertise:</strong> FEA Expert</p>
                         </div>
                     </div>
 
-                    <!-- Project 3 - Diesel Tank Design -->
-                    <div class="row project-card">
-                        <div class="col-md-12">
-                            <h3>Project – 6000 Gallon Diesel Tank Design (UL-142 Compliant)</h3>
-                            <ul>
-                                <li><strong>FEA Analysis for Diesel Tank @ 15 psi:</strong> Structural analysis using
-                                    FEA to ensure tank stability and safety under specified pressure conditions.</li>
-                                <li><strong>Optimization of Stiffeners Based on FEA Report:</strong> Improved stiffener
-                                    placement and design based on FEA results to enhance tank durability and cost
-                                    efficiency.</li>
-                                <li><strong>Nozzle Orientation Design:</strong> Customized nozzle orientation for easy
-                                    access and maintenance.</li>
-                                <li><strong>3D Modelling and 2D Fabrication Drawings:</strong> Detailed 3D models and 2D
-                                    drawings to facilitate accurate fabrication and assembly.</li>
-                            </ul>
+                    <!-- Team Member: Moiz Khan -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>Moiz Khan</h3>
+                            <p><strong>Expertise:</strong> Oversees Thermal and Mass Balancing</p>
                         </div>
                     </div>
 
-                    <!-- Project 4 - Cost Estimation -->
-                    <div class="row project-card">
-                        <div class="col-md-12">
-                            <h3>Project – Cost Estimation for Equipment and Logistics</h3>
-                            <ul>
-                                <li><strong>Comprehensive cost estimation:</strong> covering equipment like pumps,
-                                    compressors, tanks, heat exchangers, piping, structural components, electrical
-                                    installations, and logistics to ensure project efficiency and cost control.</li>
-                            </ul>
+                    <!-- Team Member: Nabeel -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>Nabeel</h3>
+                            <p><strong>Expertise:</strong> CFD Expert</p>
                         </div>
                     </div>
 
-                    <!-- Project 5 - Design Standards and Specifications Development -->
-                    <div class="row project-card">
-                        <div class="col-md-12">
-                            <h3>Project – Design Standards and Specifications Development</h3>
-                            <ul>
-                                <li><strong>Preparation of Design Standards and Specifications:</strong> Development of
-                                    piping, structural, layout, and process design standards and specifications,
-                                    adhering to the latest ASME codes and standards.</li>
-                                <li><strong>Pipe Class Specifications Development:</strong> Customized pipe class
-                                    specifications for optimized piping design and material selection.</li>
-                            </ul>
+                    <!-- Team Member: P Kumar -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>P Kumar</h3>
+                            <p><strong>Expertise:</strong> FEA Expert</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member: H Siddiqui -->
+                    <div class="row personnel-card">
+                        <div class="col-md-9">
+                            <h3>H Siddiqui</h3>
+                            <p><strong>Expertise:</strong> CFD Expert</p>
                         </div>
                     </div>
                 </div>
